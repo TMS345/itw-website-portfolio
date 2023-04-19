@@ -1,41 +1,85 @@
+html
+{
+  background-color: white;
+}
+
+header 
+{
+  height: 500px;
+  width: auto;
+  background-color: white; 
+}
+
+header h1
+{
+  font-family: "Rubik_Maze", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  background-image: repeating-conic-gradient(#553c9a 0%, #553c9a 10%, #ee4b2b 10%, #ee4b2b 20%, #00c2cb 20%, #00c2cb 30%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 h1
 {
   font-family: "Rubik_Maze", sans-serif;
   font-weight: bold;
   margin-bottom: 0px;
   text-align: center;
-  font-size: 45px;
-
+  font-size: 70px;
 }
 
 h2
 {
-  font-family: "Rubik_Pixels", sans-serif;
-  font-size: 30px;
+  font-family: "Righteous-Regular", sans-serif;
+  font-size: 45px;
   text-align: center;
+  text-transform: normal;
 }
 
 h3 
 {
-  font-family: "Tilt_Prism", sans-serif;
+  font-family: "SecularOne", sans-serif;
   text-align: center;
 }
 
-body 
+body
 {
-  font-family: "Poppins", sans-serif;
+  font-family: "LexendDeca-VariableFont_wght", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  background-color: none;
+}
+
+#contact-me h2
+{
+  font-size: 40px;
+  font-weight: 500;
+  background-image: repeating-conic-gradient(blueviolet 0%, palevioletred 10%, blueviolet 10%, darkolivegreen 20%, ghostwhite 10%, deeppink 10%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+input, label
+{
+  font-family: "LexendDeca-VariableFont_wght", sans-serif;
 }
 
 #contact-me
 {
-  background-color: #f2f2f2;
+  color: white;
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: none;
+  background-color: black;
 }
 
 ul
@@ -47,29 +91,60 @@ section
 {
   margin: 50px;
   padding: 50px;
-  background-color: whitesmoke;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
-#aboutme
+#about-me
 {
   margin: 50px;
   padding: 50px;
-  background-color: ghostwhite;
+  background-color: cadetblue;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  color: white;
+}
+
+#about-me h2
+{
+  font-size: 50px;
+  font-weight: 500;
+  background-image: repeating-conic-gradient(slategrey 10%, deeppink 10%, white 10%, white 20%, cyan 20%, fuchsia 30%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: "Righteous-Regular", sans-serif;
+}
+
+#about-me h3
+{
+  font-size: 35px;
+  font-weight: 500;
+  background-image: linear-gradient(ghostwhite 40%, lightslategrey 30%, navajowhite 65%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 #portfolio
 {
   margin: 50px;
   padding: 50px;
-  background-color: ghostwhite;
+  background-color: darksalmon;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio h2
+{
+  font-size: 70px;
+  font-weight: 500;
+  background-image: repeating-conic-gradient(beige 10%, ivory 10%, lavenderblush 10%, sandybrown 20%, teal 20%, turquoise 30%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 form 
 {
-  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -90,7 +165,12 @@ button
 
 button:hover 
 {
-  background-color: #3e8e41;
+  background-color: lightgoldenrodyellow;
+}
+
+main
+{
+  background-color: none;
 }
 
 input[type="name"], input[type="email"], input[type="message"], textarea
@@ -103,56 +183,71 @@ input[type="name"], input[type="email"], input[type="message"], textarea
   font-weight: normal;
   fontcolor: #000000;
   transition: background-color 0.3s ease;
+  font-family: "SecularOne", sans-serif;
 }
 
-div.nav
+nav
 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #333;
-  height: 75px;
+  background-color: white;
   padding: 10px 10px;
-  overflow: auto;
+  overflow: hidden;
   margin: 20px;
+  margin-top: 50px;
+  background-color: white;
+  border: groove;
+  position: relative;
+  height: auto;
+  width: auto;
 }
 
-div.nav li
+nav ul li
 {
   float: left;
-  color: #f2f2f2;
+  color: white;
   align-items: center;
+  justify-content: center;
   padding: 10px 10px;
-  margin: 20px;
+  margin: 10px;
   font-size: 17px;
-  font-family: "Tilt_Prism", sans-serif;
+  list-style-type: none;
+  font-family: "SecularOne", sans-serif;
+  font-weight: bold;
 }
 
-div.nav a
+nav ul li a
 {
   text-decoration: none;
-  color: #f2f2f2;
+  color: orangered;
+  padding: 10px 30px;
+  font-size: 1.3em;
 }
 
-div.nav ul
+nav ul li a:hover 
 {
-  list-style-type: none;
-  padding: 0;
+  background-color: blanchedalmond;
+  cursor: pointer;
 }
 
-nav a:hover 
+#portfolio img
 {
-  background-color: mediumaquamarine;
-  width: 20px;
-  height: 20px;
+  max-width: 50%;
+  border-radius: 10px;
+  box-shadow: none;
+  border: none;
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 img
 {
   max-width: 25%;
   border-radius: 10px;
-  box-shadow: 3px 3px 5px grey;
-  border: 1px solid black;
+  box-shadow: none;
+  border: none;
   display: block;
   margin: auto;
   text-align: center;
@@ -162,8 +257,8 @@ div img
 {
   max-width: 10%;
   border-radius: 10px;
-  box-shadow: 3px 3px 5px grey;
-  border: 1px solid black;
+  box-shadow: none;
+  border: none;
   display: block;
   margin: auto;
   text-align: center;
@@ -172,18 +267,12 @@ div img
 #about-me h3, p
 {
   text-align: center;
-  font-family: 'Tilt_Prism', sans-serif;
+  font-family: 'LexendDeca-VariableFont_wght', sans-serif;
 }
 
 #port_item
 {
-  background-color: mediumaquamarine;
-}
-
-@font-face
-{
-  font-family: 'Rubik_Pixels';
-  src: url('RubikPixels-Regular.ttf') format('truetype');
+  background-color: none;
 }
 
 @font-face 
@@ -194,13 +283,73 @@ div img
 
 @font-face 
 {
-  font-family: 'Tilt_Prism';
-  src: url('TiltPrism-Regular-VariableFont_XROT,YROT.ttf') format('truetype');
+  font-family: 'CormorantGaramond-SemiBold';
+  src: url('CormorantGaramond-SemiBold.ttf') format('truetype');
 }
 
 @font-face 
 {
-  font-family: 'Rubik_Vinyl';
-  src: url('RubikVinyl-Regular.ttf') format('truetype');
+  font-family: 'Righteous-Regular';
+  src: url('Righteous-Regular.ttf') format('truetype');
 }
 
+@font-face 
+{
+  font-family: 'LexendDeca-VariableFont_wght';
+  src: url('LexendDeca-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family: 'SecularOne';
+  src: url('SecularOne-Regular.ttf') format('truetype');
+}
+
+html, body 
+{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+html 
+{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+body 
+{
+  font-size: 1.3em;
+}
+
+header 
+{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+header .content 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 125px;
+  z-index: 1;
+  background-color: white;
+}
+
+header h1, header h2 
+{
+  margin: 0;
+}
+
+header h2
+{
+  text-transform: uppercase;
+  margin-top: -.5em;
+}
