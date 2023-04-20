@@ -3,20 +3,15 @@ html
   background-color: white;
 }
 
-header 
-{
-  height: 500px;
-  width: auto;
-  background-color: white; 
-}
-
-header h1
+header hgroup
 {
   font-family: "Rubik_Maze", sans-serif;
   font-weight: bold;
   margin-bottom: 0px;
   text-align: center;
   font-size: 70px;
+  height: auto;
+  width: auto;
   display: flex;
   justify-content: center;
   font-weight: 600;
@@ -60,9 +55,7 @@ body
 #contact-me h2
 {
   font-size: 40px;
-  font-weight: 500;
-  background-image: repeating-conic-gradient(blueviolet 0%, palevioletred 10%, blueviolet 10%, darkolivegreen 20%, ghostwhite 10%, deeppink 10%);
-  color: transparent;
+  background-color: blanchedalmond;
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -108,10 +101,7 @@ section
 {
   font-size: 50px;
   font-weight: 500;
-  background-image: repeating-conic-gradient(slategrey 10%, deeppink 10%, white 10%, white 20%, cyan 20%, fuchsia 30%);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: white;
   font-family: "Righteous-Regular", sans-serif;
 }
 
@@ -119,10 +109,7 @@ section
 {
   font-size: 35px;
   font-weight: 500;
-  background-image: linear-gradient(ghostwhite 40%, lightslategrey 30%, navajowhite 65%);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: wheat;
 }
 
 #portfolio
@@ -137,10 +124,7 @@ section
 {
   font-size: 70px;
   font-weight: 500;
-  background-image: repeating-conic-gradient(beige 10%, ivory 10%, lavenderblush 10%, sandybrown 20%, teal 20%, turquoise 30%);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: white;
 }
 
 form 
@@ -199,8 +183,6 @@ nav
   background-color: white;
   border: groove;
   position: relative;
-  height: auto;
-  width: auto;
 }
 
 nav ul li
@@ -233,7 +215,7 @@ nav ul li a:hover
 
 #portfolio img
 {
-  max-width: 50%;
+  max-width: 25%;
   border-radius: 10px;
   box-shadow: none;
   border: none;
@@ -328,8 +310,14 @@ header
 {
   height: 100%;
   position: relative;
-  overflow: hidden;
-  background-color: white;
+  overflow: visible;
+  background-color: none;
+}
+
+header
+{
+  background-color: inherit; 
+  margin-bottom: 250px;
 }
 
 header .content 
@@ -346,10 +334,11 @@ header .content
 header h1, header h2 
 {
   margin: 0;
+  padding: 0;
 }
 
 header h2
 {
   text-transform: uppercase;
-  margin-top: -.5em;
+  margin-top: -.2em;
 }
