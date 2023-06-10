@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!--
-	add click to download a href to portfolio, resume and report with a snapshot of each
-	fix header and nav section issue
- -->
 <head>
 	<title>Digital Portfolio - Home</title>
 	<link rel="stylesheet" href="portfolio_styles.css">
@@ -37,79 +33,67 @@
 	</header>
 	
 	<main>
-		<section id = "about-me">
-			<h2>ABOUT ME</h2>
-			<p>A lot of my free time also goes to studying the Bible and doing work for my local church. I love volunteering time to my local assembly and get the opportunity to learn a lot from it.
-			When I have free time, I practice and play music. I also work with audio and have been learning to love music and sound in its many different applications.
-			​I have been lucky enough to grow up with both parents and am the oldest of four siblings. This has taught me patience, displine, consistency and growing wisdom.
-			I love to program and have been doing so since high school. I have loved messing around with technology a 
-				lot earlier and climbing into a career into technology. I have worked with several languages such as Python, C++ and HTML, and am broadening my horizons daily to get better in my field.
-			Never have I ever been the most athletically gifted kid growing up, but when I was old enough to, I started lifting and instantly fell in love. This love grew because of the progress I 
-				was making and the sense of accomplishment that follows. Working out, eating right, and overall living a healthy lifestlye is one of the best discoveries I have made so far and I am excited to see how far I can go with it. 
-				</p>
+		<section class="about">
+			<div class="container">
+				<h2>ABOUT ME</h2>
+				<p>A lot of my free time also goes to studying the Bible and doing work for my local church. I love volunteering time to my local assembly and get the opportunity to learn a lot from it.
+				When I have free time, I practice and play music. I also work with audio and have been learning to love music and sound in its many different applications.
+				​I have been lucky enough to grow up with both parents and am the oldest of four siblings. This has taught me patience, displine, consistency and growing wisdom.
+				I love to program and have been doing so since high school. I have loved messing around with technology a 
+					lot earlier and climbing into a career into technology. I have worked with several languages such as Python, C++ and HTML, and am broadening my horizons daily to get better in my field.
+				Never have I ever been the most athletically gifted kid growing up, but when I was old enough to, I started lifting and instantly fell in love. This love grew because of the progress I 
+					was making and the sense of accomplishment that follows. Working out, eating right, and overall living a healthy lifestlye is one of the best discoveries I have made so far and I am excited to see how far I can go with it. 
+					</p>
+			</div>
 		</section>
 		
-		<section id = "portfolio">
-			<h2>MY PORTFOLIO</h2>
-			<section id = "port_item">
-				<h3>Technical Description</h3>
-				<a href="tec_description.html"><img src="edit-info.png" alt="Technical Description"></a>
-			</section >
-			
-			<section id = "port_item">
-				<h3>Recommendation Report</h3>
-				<a href="rec_report.html"><img src="report.png" alt="Recommendation Report"></a>
-			</section>
-			
-			<section id = "port_item">
-				<h3>Resume</h3>
-				<a href="resume.html"><img src="resume.png" alt="Resume"></a>
-			</section>
+		<section class = "portfolio">
+			<div class="container">
+				<h2>MY PORTFOLIO</h2>
+				<section id = "port_item">
+					<h3>Project One</h3>
+					<a href="#"><img src="edit-info.png"></a>
+				</section>
+				
+				<section id = "port_item">
+					<h3>Project Two</h3>
+					<a href="#"><img src="report.png"></a>
+				</section>
+				
+				<section id = "port_item">
+					<h3>Project Three</h3>
+					<a href="#"><img src="resume.png"></a>
+				</section>
+			</div>
 		</section>
 	</main>
 	
 	<footer>
-		<section id="contact" class="section">
+		<section class="contact">
 		  <div class="container">
-			<div class="row">
-			  <div class="col-md-6">
-				<h2>Want to Reach Me?</h2>
-				<form>
-				  <div class="form-group">
+			<h2>Want to Reach Me?</h2>
+			<form class ="form-flex">
+				<div class="form-group">
 					<label for="name">Name</label>
-					<input type="text" class="form-control" id="name" placeholder="Your name">
-				  </div>
-				  <div class="form-group">
+					<input type="name" class="form-control" id="name" placeholder="Your name" required>
+				</div>
+				<div class="form-group">
 					<label for="email">Email</label>
-					<input type="email" class="form-control" id="email" placeholder="Your email">
-				  </div>
-				  <div class="form-group">
+					<input type="email" class="form-control" id="email" placeholder="Your email" required>
+				</div>
+				<div class="form-group">
+					<label for="subject">Subject</label>
+					<input type="subject" class="form-control" id="subject" placeholder="Email subject" required>
+				</div>
+				<div class="form-group">
 					<label for="message">Message</label>
-					<textarea class="form-control" id="message" rows="5" placeholder="Your message"></textarea>
-				  </div>
-				  <button type="submit" class="btn btn-primary">Send Message</button>
-				</form>
-			  </div>
-			  <div class="col-md-6">
-				<p>Phone: (609) 445-0117</p>
-				<p>Email: gershomog@gmail.com</p>
-			  </div>
-			</div>
+					<textarea class="form-control" id="message" rows="5" placeholder="Your message" required></textarea>
+				</div>
+				
+				<button type="submit" class="btn btn-primary">Send Message</button>
+			</form>
 		  </div>
 		</section>
-
-		<!--section id="contact-me">
-			<h2>Contact Me</h2>
-			<form action="#" method="post">
-				<label for="name">Name:</label>
-				<input type="name" id="name" name="name" required>
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required>
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" rows="5" required></textarea>
-				<button type="submit">Send</button>
-			</form>
-		</section-->
 	</footer>
 </body>
 </html>
