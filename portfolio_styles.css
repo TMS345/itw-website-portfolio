@@ -8,17 +8,20 @@ header hgroup
   font-family: "Rubik_Maze", sans-serif;
   font-weight: bold;
   margin-bottom: 0px;
-  text-align: center;
   font-size: 70px;
   height: auto;
   width: auto;
   display: flex;
-  justify-content: left;
-  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
   background-image: repeating-conic-gradient(#553c9a 0%, #553c9a 10%, #ee4b2b 10%, #ee4b2b 20%, #00c2cb 20%, #00c2cb 30%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1
@@ -28,6 +31,7 @@ h1
   margin-bottom: 0px;
   text-align: center;
   font-size: 70px;
+  display: flex;
 }
 
 h2
@@ -115,23 +119,36 @@ section
   font-family: "Poppins", sans-serif;
 }
 
-.portfolio img
+.port_item
+{
+  background-color: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+.port_item h3
+{
+  margin-bottom: 0px;
+}
+
+.port_item img
 {
   max-width: 15%;
   border-radius: 10px;
-  box-shadow: none;
-  border: none;
   display: block;
   margin: auto;
+  margin-top: 0px;
   text-align: center;
 }
 
 .portfolio
 {
-  margin: 50px;
-  padding: 50px;
+  margin: 25px;
+  padding: 25px;
   background-color: transparent;
   box-shadow: none;
+  height: auto;
+  width: auto;
 }
 
 .portfolio h2
@@ -169,6 +186,8 @@ button:hover
 main
 {
   background-color: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .container input[type="subject"], input[type="name"], input[type="email"], input[type="message"], textarea
@@ -305,11 +324,6 @@ div img
   font-family: 'LexendDeca-VariableFont_wght', sans-serif;
 }
 
-#port_item
-{
-  background-color: none;
-}
-
 @font-face 
 {
   font-family: 'Rubik_Maze';
@@ -395,4 +409,21 @@ header h2
 {
   text-transform: uppercase;
   margin-top: 0px;
+}
+
+.parallax 
+{
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  perspective: 1px;
+}
+
+.parallax-content 
+{
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  transform-origin: top;
+  transform: translateZ(-1px) scale(2);
 }
